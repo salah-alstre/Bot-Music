@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Sonaris logo">
+  <defs>
+    <linearGradient id="m-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C5CFF"/><stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="m-bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#7C5CFF"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="72%">
+      <stop offset="0" stop-color="#1b1638"/><stop offset="0.55" stop-color="#0f0d1f"/><stop offset="1" stop-color="#0B0B12"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7C5CFF" stop-opacity="0.45"/><stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="420" fill="url(#glow)"/>
+  <g>
+    <circle cx="512" cy="512" r="430" fill="none" stroke="#7C5CFF" stroke-opacity="0.07" stroke-width="6"/>
+    <circle cx="512" cy="512" r="360" fill="none" stroke="#7C5CFF" stroke-opacity="0.16" stroke-width="6"/>
+    <circle cx="512" cy="512" r="290" fill="none" stroke="url(#m-ring)" stroke-width="26"/>
+    <rect x="322" y="452" width="44" height="120" rx="22" fill="url(#m-bar)"/>
+    <rect x="406" y="387" width="44" height="250" rx="22" fill="url(#m-bar)"/>
+    <rect x="490" y="312" width="44" height="400" rx="22" fill="url(#m-bar)"/>
+    <rect x="574" y="387" width="44" height="250" rx="22" fill="url(#m-bar)"/>
+    <rect x="658" y="452" width="44" height="120" rx="22" fill="url(#m-bar)"/>
+  </g>
+</svg>

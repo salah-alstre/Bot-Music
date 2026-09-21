@@ -1,0 +1,19 @@
+# /etc/systemd/system/sonaris-bot.service
+[Unit]
+Description=Sonaris Discord music bot
+After=network-online.target sonaris-lavalink.service
+Wants=network-online.target sonaris-lavalink.service
+
+[Service]
+User=sonaris
+WorkingDirectory=/opt/sonaris
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node --disable-warning=ExperimentalWarning /opt/sonaris/dist/index.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=full
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

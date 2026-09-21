@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="480" viewBox="0 0 1360 480" role="img" aria-label="Sonaris banner">
+  <defs>
+    <linearGradient id="b-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C5CFF"/><stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="b-bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#7C5CFF"/>
+    </linearGradient>
+    <linearGradient id="b-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0b1c"/><stop offset="0.6" stop-color="#0a0a14"/><stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="b-glow-l" cx="18%" cy="50%" r="45%">
+      <stop offset="0" stop-color="#7C5CFF" stop-opacity="0.28"/><stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b-glow-r" cx="86%" cy="50%" r="40%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.16"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="b-word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfd6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1360" height="480" fill="url(#b-bg)"/>
+  <rect width="1360" height="480" fill="url(#b-glow-l)"/>
+  <rect width="1360" height="480" fill="url(#b-glow-r)"/>
+  <g>
+    <rect x="985.0" y="227.0" width="7" height="26.0" rx="3.5" fill="url(#b-bar)" fill-opacity="0.15"/>
+    <rect x="992.4" y="218.1" width="7" height="43.9" rx="3.5" fill="url(#b-bar)" fill-opacity="0.25"/>
+    <rect x="999.9" y="211.6" width="7" height="56.8" rx="3.5" fill="url(#b-bar)" fill-opacity="0.33"/>
+    <rect x="1007.3" y="214.1" width="7" height="51.9" rx="3.5" fill="url(#b-bar)" fill-opacity="0.39"/>
+    <rect x="1014.8" y="213.7" width="7" height="52.5" rx="3.5" fill="url(#b-bar)" fill-opacity="0.45"/>
+    <rect x="1022.2" y="205.9" width="7" height="68.2" rx="3.5" fill="url(#b-bar)" fill-opacity="0.51"/>
+    <rect x="1029.7" y="197.4" width="7" height="85.1" rx="3.5" fill="url(#b-bar)" fill-opacity="0.56"/>
+    <rect x="1037.1" y="207.5" width="7" height="65.1" rx="3.5" fill="url(#b-bar)" fill-opacity="0.61"/>
+    <rect x="1044.6" y="180.1" width="7" height="119.8" rx="3.5" fill="url(#b-bar)" fill-opacity="0.66"/>
+    <rect x="1052.0" y="169.9" width="7" height="140.3" rx="3.5" fill="url(#b-bar)" fill-opacity="0.71"/>
+    <rect x="1059.4" y="188.9" width="7" height="102.2" rx="3.5" fill="url(#b-bar)" fill-opacity="0.75"/>
+    <rect x="1066.9" y="189.6" width="7" height="100.8" rx="3.5" fill="url(#b-bar)" fill-opacity="0.79"/>
+    <rect x="1074.3" y="188.0" width="7" height="104.1" rx="3.5" fill="url(#b-bar)" fill-opacity="0.82"/>
+    <rect x="1081.8" y="194.7" width="7" height="90.6" rx="3.5" fill="url(#b-bar)" fill-opacity="0.85"/>
+    <rect x="1089.2" y="196.2" width="7" height="87.7" rx="3.5" fill="url(#b-bar)" fill-opacity="0.88"/>
+    <rect x="1096.7" y="166.5" width="7" height="146.9" rx="3.5" fill="url(#b-bar)" fill-opacity="0.91"/>
+    <rect x="1104.1" y="149.3" width="7" height="181.4" rx="3.5" fill="url(#b-bar)" fill-opacity="0.93"/>
+    <rect x="1111.6" y="173.5" width="7" height="133.0" rx="3.5" fill="url(#b-bar)" fill-opacity="0.95"/>
+    <rect x="1119.0" y="170.2" width="7" height="139.7" rx="3.5" fill="url(#b-bar)" fill-opacity="0.97"/>
+    <rect x="1126.4" y="154.1" width="7" height="171.9" rx="3.5" fill="url(#b-bar)" fill-opacity="0.98"/>
+    <rect x="1133.9" y="174.5" width="7" height="130.9" rx="3.5" fill="url(#b-bar)" fill-opacity="0.99"/>
+    <rect x="1141.3" y="191.9" width="7" height="96.2" rx="3.5" fill="url(#b-bar)" fill-opacity="1.00"/>
+    <rect x="1148.8" y="179.4" width="7" height="121.2" rx="3.5" fill="url(#b-bar)" fill-opacity="1.00"/>
+    <rect x="1156.2" y="159.8" width="7" height="160.4" rx="3.5" fill="url(#b-bar)" fill-opacity="1.00"/>
+    <rect x="1163.7" y="174.3" width="7" height="131.4" rx="3.5" fill="url(#b-bar)" fill-opacity="1.00"/>
+    <rect x="1171.1" y="166.4" width="7" height="147.3" rx="3.5" fill="url(#b-bar)" fill-opacity="0.99"/>
+    <rect x="1178.6" y="140.9" width="7" height="198.3" rx="3.5" fill="url(#b-bar)" fill-opacity="0.98"/>
+    <rect x="1186.0" y="160.4" width="7" height="159.3" rx="3.5" fill="url(#b-bar)" fill-opacity="0.97"/>
+    <rect x="1193.4" y="192.0" width="7" height="96.0" rx="3.5" fill="url(#b-bar)" fill-opacity="0.95"/>
+    <rect x="1200.9" y="184.0" width="7" height="112.1" rx="3.5" fill="url(#b-bar)" fill-opacity="0.93"/>
+    <rect x="1208.3" y="190.9" width="7" height="98.2" rx="3.5" fill="url(#b-bar)" fill-opacity="0.91"/>
+    <rect x="1215.8" y="189.0" width="7" height="102.1" rx="3.5" fill="url(#b-bar)" fill-opacity="0.88"/>
+    <rect x="1223.2" y="181.0" width="7" height="118.0" rx="3.5" fill="url(#b-bar)" fill-opacity="0.85"/>
+    <rect x="1230.7" y="159.2" width="7" height="161.6" rx="3.5" fill="url(#b-bar)" fill-opacity="0.82"/>
+    <rect x="1238.1" y="170.9" width="7" height="138.2" rx="3.5" fill="url(#b-bar)" fill-opacity="0.79"/>
+    <rect x="1245.6" y="199.4" width="7" height="81.2" rx="3.5" fill="url(#b-bar)" fill-opacity="0.75"/>
+    <rect x="1253.0" y="182.3" width="7" height="115.4" rx="3.5" fill="url(#b-bar)" fill-opacity="0.71"/>
+    <rect x="1260.4" y="192.3" width="7" height="95.3" rx="3.5" fill="url(#b-bar)" fill-opacity="0.66"/>
+    <rect x="1267.9" y="207.1" width="7" height="65.8" rx="3.5" fill="url(#b-bar)" fill-opacity="0.61"/>
+    <rect x="1275.3" y="206.0" width="7" height="68.1" rx="3.5" fill="url(#b-bar)" fill-opacity="0.56"/>
+    <rect x="1282.8" y="197.9" width="7" height="84.1" rx="3.5" fill="url(#b-bar)" fill-opacity="0.51"/>
+    <rect x="1290.2" y="202.4" width="7" height="75.1" rx="3.5" fill="url(#b-bar)" fill-opacity="0.45"/>
+    <rect x="1297.7" y="215.5" width="7" height="49.0" rx="3.5" fill="url(#b-bar)" fill-opacity="0.39"/>
+    <rect x="1305.1" y="210.4" width="7" height="59.2" rx="3.5" fill="url(#b-bar)" fill-opacity="0.33"/>
+    <rect x="1312.6" y="217.6" width="7" height="44.7" rx="3.5" fill="url(#b-bar)" fill-opacity="0.25"/>
+    <rect x="1320.0" y="227.0" width="7" height="26.0" rx="3.5" fill="url(#b-bar)" fill-opacity="0.15"/>
+    
+  </g>
+  <g transform="translate(0,0)">
+  <g>
+    <circle cx="190" cy="240" r="172" fill="none" stroke="#7C5CFF" stroke-opacity="0.07" stroke-width="2.4000000000000004"/>
+    <circle cx="190" cy="240" r="144" fill="none" stroke="#7C5CFF" stroke-opacity="0.16" stroke-width="2.4000000000000004"/>
+    <circle cx="190" cy="240" r="116" fill="none" stroke="url(#b-ring)" stroke-width="10.4"/>
+    <rect x="114" y="216" width="17.6" height="48" rx="8.8" fill="url(#b-bar)"/>
+    <rect x="147.6" y="190" width="17.6" height="100" rx="8.8" fill="url(#b-bar)"/>
+    <rect x="181.2" y="160" width="17.6" height="160" rx="8.8" fill="url(#b-bar)"/>
+    <rect x="214.79999999999998" y="190" width="17.6" height="100" rx="8.8" fill="url(#b-bar)"/>
+    <rect x="248.39999999999998" y="216" width="17.6" height="48" rx="8.8" fill="url(#b-bar)"/>
+  </g></g>
+  <text x="380" y="252" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="92" font-weight="700" letter-spacing="14" fill="url(#b-word)">SONARIS</text>
+  <text x="384" y="304" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" letter-spacing="4" fill="#8f97c4">PRECISION AUDIO FOR EVERY SERVER</text>
+</svg>

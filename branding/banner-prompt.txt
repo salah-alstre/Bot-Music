@@ -1,0 +1,29 @@
+Sonaris - Discord bot banner, image-generation prompt
+=====================================================
+
+The repository already contains a finished vector banner (banner.svg / banner.png). Use this prompt only if you
+want an alternative or a more atmospheric version from an AI image generator.
+
+PROMPT
+------
+Ultra-wide dark futuristic banner for a premium Discord music bot called "Sonaris". Left side: a glowing circular
+sonar-ring logo with five symmetrical equalizer bars in a violet (#7C5CFF) to cyan (#22D3EE) gradient, next to the
+clean, widely letter-spaced sans-serif wordmark "SONARIS" in white and a small muted-lavender tagline "PRECISION AUDIO
+FOR EVERY SERVER". Right side: a single elegant audio waveform made of thin rounded vertical bars, tallest in the
+middle and fading out toward both ends, glowing cyan to violet. Background: near-black deep navy (#0B0B12) with a soft
+violet light bloom behind the logo and a faint cyan bloom behind the waveform, subtle volumetric haze. A wide band of
+empty dark space between the logo group and the waveform. Minimal, calm, premium, cinematic lighting, sharp vector
+clarity, no clutter, no extra icons, no people, no photo textures.
+
+NEGATIVE PROMPT
+---------------
+crowded composition, overlapping text, misspelled text, extra words, watermark, stock-photo look, neon overload,
+rainbow colors, lens flare spam, cartoon style, low contrast
+
+TECHNICAL SPECS
+---------------
+- Canvas: 1360 x 480 px (17:6). Discord's minimum for an application banner is 680 x 240 px with the same ratio.
+- Keep the wordmark and logo inside the left 60 percent so Discord's profile crop never hides them.
+- Palette: #0B0B12, #7C5CFF, #22D3EE, text #FFFFFF / #8F97C4
+- Export PNG (sRGB). Keep file size under 2 MB.
+- For a GitHub social preview, crop a 2:1 (1280 x 640) region and keep the wordmark centered.

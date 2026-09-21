@@ -1,0 +1,28 @@
+Sonaris - Discord bot avatar / logo, image-generation prompt
+=============================================================
+
+The repository already contains a finished vector logo (logo.svg / logo.png). Use this prompt only if you
+want an alternative or a more illustrative version from an AI image generator.
+
+PROMPT
+------
+Square app icon for a premium Discord music bot called "Sonaris". A minimal, modern, futuristic mark: a thin
+glowing circular sonar ring (gradient from electric violet #7C5CFF to cyan #22D3EE) enclosing five vertical rounded
+equalizer bars in a symmetrical waveform (short, medium, tall, medium, short) with a vertical violet-to-cyan gradient.
+Deep near-black background (#0B0B12) with a soft violet radial glow behind the mark and two extremely faint concentric
+"sonar ping" rings fading outward. Flat vector style with subtle light bloom, crisp edges, perfectly centered, strong
+silhouette that stays recognizable at 32 px, the mark occupying the central 65-70 percent of the canvas so a circular
+crop never cuts it. No text, no letters, no watermark, no photo-realism, no clutter, no gradients on the background
+other than the soft glow. Elegant, calm, high-end tech aesthetic.
+
+NEGATIVE PROMPT
+---------------
+text, letters, words, watermark, signature, headphones cliche, musical notes clip-art, cartoon, 3D plastic, busy
+background, low contrast, blurry, jpeg artifacts, extra rings, off-center
+
+TECHNICAL SPECS
+---------------
+- Canvas: 1024 x 1024 px, square, PNG
+- Safe area: keep all important shapes inside the central 700 x 700 px
+- Palette: #0B0B12 (background), #7C5CFF (violet), #22D3EE (cyan)
+- Deliver a copy exported at 128 x 128 px to check legibility at small size

@@ -1,0 +1,27 @@
+<!--
+  WinSW configuration template for the Lavalink service.
+  Placeholders in double braces are filled in by scripts\install-services.ps1.
+-->
+<service>
+  <id>MusicBot-Lavalink</id>
+  <name>Sonaris Lavalink</name>
+  <description>Lavalink audio server used by the Sonaris Discord music bot. Listens on localhost only.</description>
+
+  <executable>{{POWERSHELL}}</executable>
+  <arguments>-NoProfile -NonInteractive -ExecutionPolicy Bypass -File "{{ROOT}}\lavalink\start-lavalink.ps1"</arguments>
+  <workingdirectory>{{ROOT}}\lavalink</workingdirectory>
+
+  <startmode>Automatic</startmode>
+  <onfailure action="restart" delay="10 sec"/>
+  <onfailure action="restart" delay="20 sec"/>
+  <onfailure action="restart" delay="60 sec"/>
+  <resetfailure>1 hour</resetfailure>
+  <stoptimeout>20 sec</stoptimeout>
+
+  <logpath>{{ROOT}}\logs</logpath>
+  <logname>lavalink</logname>
+  <log mode="roll-by-size">
+    <sizeThreshold>10240</sizeThreshold>
+    <keepFiles>8</keepFiles>
+  </log>
+</service>

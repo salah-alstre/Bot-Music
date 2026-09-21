@@ -1,0 +1,32 @@
+# dependencies & build output
+node_modules/
+dist/
+dist.previous/
+*.tsbuildinfo
+
+# secrets & local configuration
+.env
+.env.*
+!.env.example
+
+# runtime data
+data/
+logs/
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+# Lavalink runtime (downloaded by scripts/setup-lavalink.ps1)
+lavalink/Lavalink.jar
+lavalink/plugins/
+lavalink/logs/
+
+# Windows service wrapper and generated definitions (created by scripts/install-services.ps1)
+/services/
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

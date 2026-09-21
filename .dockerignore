@@ -1,0 +1,17 @@
+node_modules
+dist
+data
+logs
+services
+tools
+.git
+.env
+.env.*
+!.env.example
+lavalink/Lavalink.jar
+lavalink/plugins
+lavalink/logs
+docs
+branding
+tests
+*.md

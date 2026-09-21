@@ -1,0 +1,52 @@
+# Optional Docker deployment. The native Windows Server setup (docs/WINDOWS-SERVER.md) does not need Docker.
+#
+#   1. Copy .env.example to .env and fill in DISCORD_TOKEN, DISCORD_CLIENT_ID and LAVALINK_PASSWORD
+#   2. docker compose up -d --build
+#
+# Lavalink is deliberately NOT published to the host: only the bot container can reach it.
+services:
+  lavalink:
+    image: ghcr.io/lavalink-devs/lavalink:4.2.2
+    container_name: sonaris-lavalink
+    restart: unless-stopped
+    environment:
+      LAVALINK_PASSWORD: ${LAVALINK_PASSWORD:?Set LAVALINK_PASSWORD in .env}
+      LAVALINK_BIND_ADDRESS: 0.0.0.0
+      LAVALINK_PORT: "2333"
+      SPOTIFY_ENABLED: ${SPOTIFY_ENABLED:-false}
+      SPOTIFY_CLIENT_ID: ${SPOTIFY_CLIENT_ID:-}
+      SPOTIFY_CLIENT_SECRET: ${SPOTIFY_CLIENT_SECRET:-}
+      SPOTIFY_COUNTRY_CODE: ${SPOTIFY_COUNTRY_CODE:-US}
+      YOUTUBE_OAUTH_ENABLED: ${YOUTUBE_OAUTH_ENABLED:-false}
+      YOUTUBE_OAUTH_REFRESH_TOKEN: ${YOUTUBE_OAUTH_REFRESH_TOKEN:-}
+      _JAVA_OPTIONS: -Xmx${LAVALINK_MEMORY:-1G}
+    volumes:
+      - ./lavalink/application.yml:/opt/Lavalink/application.yml:ro
+      - lavalink-plugins:/opt/Lavalink/plugins
+    networks: [sonaris]
+    expose:
+      - "2333"
+
+  bot:
+    build: .
+    container_name: sonaris-bot
+    restart: unless-stopped
+    depends_on:
+      - lavalink
+    env_file: .env
+    environment:
+      LAVALINK_HOST: lavalink
+      LAVALINK_PORT: "2333"
+      DATABASE_PATH: /app/data/sonaris.db
+      LOG_DIR: /app/logs
+      NODE_ENV: production
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    networks: [sonaris]
+
+volumes:
+  lavalink-plugins:
+
+networks:
+  sonaris:

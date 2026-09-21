@@ -1,0 +1,31 @@
+<!--
+  WinSW configuration template for the bot service.
+  Placeholders in double braces are filled in by scripts\install-services.ps1.
+-->
+<service>
+  <id>MusicBot</id>
+  <name>Sonaris Music Bot</name>
+  <description>Sonaris Discord music bot (Node.js, compiled build). Starts after MusicBot-Lavalink.</description>
+
+  <executable>{{NODE}}</executable>
+  <arguments>--disable-warning=ExperimentalWarning "{{ROOT}}\dist\index.js"</arguments>
+  <workingdirectory>{{ROOT}}</workingdirectory>
+  <env name="NODE_ENV" value="production"/>
+
+  <!-- Lavalink must be up first. The bot also retries by itself if Lavalink is still initialising. -->
+  <depend>MusicBot-Lavalink</depend>
+  <startmode>Automatic</startmode>
+  <delayedAutoStart>true</delayedAutoStart>
+  <onfailure action="restart" delay="10 sec"/>
+  <onfailure action="restart" delay="30 sec"/>
+  <onfailure action="restart" delay="60 sec"/>
+  <resetfailure>1 hour</resetfailure>
+  <stoptimeout>20 sec</stoptimeout>
+
+  <logpath>{{ROOT}}\logs</logpath>
+  <logname>service</logname>
+  <log mode="roll-by-size">
+    <sizeThreshold>10240</sizeThreshold>
+    <keepFiles>5</keepFiles>
+  </log>
+</service>

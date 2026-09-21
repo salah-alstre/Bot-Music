@@ -1,0 +1,20 @@
+# /etc/systemd/system/sonaris-lavalink.service
+[Unit]
+Description=Sonaris Lavalink
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=sonaris
+WorkingDirectory=/opt/sonaris/lavalink
+EnvironmentFile=/opt/sonaris/.env
+Environment=LAVALINK_BIND_ADDRESS=127.0.0.1
+ExecStart=/usr/bin/java -Xmx1G -jar /opt/sonaris/lavalink/Lavalink.jar
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=full
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
